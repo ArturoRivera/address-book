@@ -50,4 +50,8 @@ const inquirer = require('inquirer');
      console.log("Thanks for using Address Book!");
      process.exit();
    }
- }
+
+   getContactCount(){
+     return this.contacts.length;
+   }
+}
