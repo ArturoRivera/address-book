@@ -11,7 +11,7 @@
   "test": {
     "username": "postgres",
     "password": null,
-    "host": "127.0.0.1",
+    "host": "localhost",
     "database": "address-bloc-test",
     "dialect": "postgres",
     "logging": false
