@@ -21,17 +21,16 @@ describe("ContactController", () => {
   describe("#addContact()", () => {
 
      it("should add a single contact into the book", (done) => {
-       this.book.addContact("Alice", "001-101-1010", "Alice@blocStudent.io")
+       this.book.addContact("Alice", "001-101-1010", "Alice@email.com")
         .then((contact) => {
           expect(contact.name).toBe("Alice");
           expect(contact.phone).toBe("001-101-1010");
-          expect(contact.email).toBe("Alice@blocStudent.io");
+          expect(contact.email).toBe("Alice@email.com");
           done();
         })
         .catch((err) => {
           done();
         });
      });
-
    });
 });

@@ -27,7 +27,8 @@ module.exports = class ContactController {
          name: "email",
          message: "Contact's email - ",
          validate(val){
-           return val !== "";
+           var pattern = RegExp('.+@[a-zA-Z]+\..+', 'g');
+           return pattern.test(val);
          }
        }
      ];
